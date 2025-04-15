@@ -5,6 +5,8 @@ public class CriticalPopup : DamagePopup
 {
     private AnimationCurve scaleCurve = AnimationCurve.EaseInOut(0, 1.5f, 1, 1f);
 
+    [SerializeField] private AnimationCurve fadeCurve;
+
 
     public void InitializeCritical(int damage, Color color, float size, float duration, float speed, 
         float arcHeight, float scaleMultiplier, Sprite background, float horizontalOffset)
@@ -23,7 +25,8 @@ public class CriticalPopup : DamagePopup
         {
             backgroundImage.sprite = background;
             backgroundImage.enabled = true;
-            backgroundImage.color = new Color(1, 1, 1, 0.8f);
+            backgroundImage.color = new Color(1, 1, 1, 0.9f);
+            backgroundImage.transform.SetAsFirstSibling();
             backgroundImage.DOFade(0f, duration).SetEase(Ease.InQuad);
         }
     }
@@ -39,7 +42,7 @@ public class CriticalPopup : DamagePopup
         rectTransform.anchoredPosition = base.startPosition + new Vector2(xOffset, yOffset);
 
         // 根據生命週期調整縮放
-        float scale = scaleCurve.Evaluate(progress);
+        float scale = fadeCurve.Evaluate(progress);
         rectTransform.localScale = Vector3.one * scale;
     }
 } 

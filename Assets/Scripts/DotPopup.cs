@@ -4,6 +4,7 @@ using DG.Tweening;
 public class DotPopup : FloatingText
 {
     private AnimationCurve scaleCurve = AnimationCurve.EaseInOut(0, 1.3f, 1, 1f);
+    
 
     public void InitializeDot(int damage, Color color, float size, float duration, float speed, float scaleMultiplier)
     {

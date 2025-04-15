@@ -148,6 +148,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d3b5b6febd161f42a41f4ffa75c60fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.11838007
+      value: 1.6856093
+      inSlope: 1.5387831
+      outSlope: 1.5387831
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.2675385
+      value: 0.7689055
+      inSlope: -0.1329784
+      outSlope: -0.1329784
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.07177472
+    - serializedVersion: 3
+      time: 0.44375858
+      value: 1.1388123
+      inSlope: 0.33723703
+      outSlope: 0.33723703
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.69132304
+      value: 0.8865882
+      inSlope: -0.42396343
+      outSlope: -0.42396343
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &4248802003066470599
 GameObject:
   m_ObjectHideFlags: 0
