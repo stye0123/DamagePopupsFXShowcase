@@ -7,7 +7,7 @@ public class DotPopup : FloatingText
 
     public void InitializeDot(int damage, Color color, float size, float duration, float speed, float scaleMultiplier)
     {
-        base.Initialize(damage.ToString(), color, size, duration, speed, scaleMultiplier);
+        base.Initialize("中毒：" + damage.ToString(), color, size, duration, speed, scaleMultiplier);
         
         // 初始縮放效果
         //Vector3.one 是 Unity 的 Vector3 結構，表示一個大小為 1 的向量

@@ -5,6 +5,7 @@ public class CriticalPopup : DamagePopup
 {
     private AnimationCurve scaleCurve = AnimationCurve.EaseInOut(0, 1.5f, 1, 1f);
 
+
     public void InitializeCritical(int damage, Color color, float size, float duration, float speed, 
         float arcHeight, float scaleMultiplier, Sprite background, float horizontalOffset)
     {
@@ -31,6 +32,12 @@ public class CriticalPopup : DamagePopup
     {
         base.Update();
         
+        // 計算拋物線運動
+        float xOffset = Mathf.Lerp(0, base.horizontalOffset, progress);
+        float yOffset = Mathf.Sin(progress * Mathf.PI) * base.arcHeight;
+        
+        rectTransform.anchoredPosition = base.startPosition + new Vector2(xOffset, yOffset);
+
         // 根據生命週期調整縮放
         float scale = scaleCurve.Evaluate(progress);
         rectTransform.localScale = Vector3.one * scale;
