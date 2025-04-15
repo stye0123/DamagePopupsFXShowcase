@@ -41,6 +41,8 @@ public class DamagePopupSystem : MonoBehaviour
     public float damageTextHorizontalOffsetMax = 2f;
     public float damageTextHorizontalOffsetMin = 2f;
 
+
+
     [Header("爆擊設定")]
     public int minCriticalDamage = 100;
     public int maxCriticalDamage = 500;
