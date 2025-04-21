@@ -2,7 +2,8 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
-
+//這個腳本負責生成所有彈跳文字
+//它會生成效果文字、傷害數字、爆擊數字、持續傷害數字、治療數字
 public class DamagePopupSystem : MonoBehaviour
 {
     [System.Serializable]

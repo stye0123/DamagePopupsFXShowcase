@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+// 這個腳本負責管理所有彈跳文字的生成
+// 它會綁定所有按鈕，並在按鈕被點擊時生成相對應的彈跳文字
 public class PopupManager : MonoBehaviour
 {
     [Header("按鈕引用")]
